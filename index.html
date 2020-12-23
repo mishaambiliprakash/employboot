@@ -17,27 +17,27 @@
                 <Table class="table table-borderless">
                     <tr>
                         <td>Employee Id</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input id="eid" type="text" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Employee Name</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input id="ename" type="text" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Company Name</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input id="cname" type="text" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Designation</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input id="desig" type="text" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Salary</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input id="sal" type="text" class="form-control"></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td><button class="btn btn-danger">REGISTER</button></td>
+                        <td><button onclick="buttonclick()" class="btn btn-danger">REGISTER</button></td>
                     </tr>
                 </Table>
             </div>
@@ -49,5 +49,27 @@
             </div>
         </div>
     </div>
+
+    <script>
+
+        function buttonclick(){
+
+            var geteid=document.getElementById("eid").value
+            var getename=document.getElementById("ename").value
+            var getcname=document.getElementById("cname").value
+            var getdesig=document.getElementById("desig").value
+            var getsal=document.getElementById("sal").value
+
+            console.log(geteid)
+            console.log(getename)
+            console.log(getcname)
+            console.log(getdesig)
+            console.log(getsal)
+
+
+        }
+
+        
+    </script>
   </body>
 </html>
